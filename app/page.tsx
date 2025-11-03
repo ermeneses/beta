@@ -1,65 +1,29 @@
-import Image from "next/image";
+import Boton from "./components/Boton";
+import Grupo from "./components/Grupo";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="flex h-lvh bg-white font-sans p-4">
+      <div className="flex flex-col items-start justify-start gap-4 p-4 bg-white  relative mt-7 border-2 h-full w-full rounded-[40px]">
+        <div className="w-full flex items-end justify-center gap-0.5 absolute -top-8">
+          <div className="border-x-2 border-t-2 w-36 truncate rounded-t-2xl px-2 text-sm h-8 flex items-center justify-center">Trabajo</div>
+          <div className="border-x-2 border-t-2 w-36 truncate rounded-t-2xl px-2 text-sm h-8 flex items-center justify-center">Rosmiman</div>
+          <div className="border-x-2 border-t-2 w-36 truncate rounded-t-2xl px-2 text-sm h-8 flex items-center justify-center">Otros</div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        <Grupo visible={false}>
+          <h1 className="font-bold text-4xl">Eduardo Meneses</h1>
+        </Grupo>
+        <Grupo direction="col" visible={false} borde nombre="Prueba" w="w-56">
+          <Boton url="https://phg.rosmiman.com/rosmiman" desc="Rosmiman Producción" favicon="https://phg.rosmiman.com/rosmiman/favicon.png" theme="blue" />
+          <Boton url="https://test01.rosmiman.com/Rosmiman47/" desc="Rosmiman Test" favicon="https://phg.rosmiman.com/rosmiman/favicon.png" theme="lavender" />
+          <Boton url="https://phg.rosmiman.com/operaciones" desc="Rosmiman Operaciones" favicon="https://phg.rosmiman.com/rosmiman/favicon.png" theme="teal" />
+          <Boton url="https://support.rosmiman.com/" desc="Rosmiman Soporte" favicon="https://phg.rosmiman.com/rosmiman/favicon.png" theme="mint" />
+          <Boton url="https://chatgpt.com/" desc="ChatGpt" theme="gray" />
+          <Boton url="https://www.youtube.com/" desc="YouTube" theme="red" />
+          <Boton url="https://dribbble.com/" desc="Dribbble" theme="pink" />
+          <Boton url="https://vercel.com/" desc="Vercel" />
+        </Grupo>
+      </div>
     </div>
   );
 }

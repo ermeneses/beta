@@ -1,26 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-buttonShadow: #000000;
+  --color-buttonBg: #ffffff;
+  --color-buttonBorder: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.theme-green {
+  --color-buttonShadow: #1e8a3a;
+  --color-cardBg: #1e8a3a;
+  --color-buttonBg: #66d081;
+  --color-buttonBorder: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.theme-blue {
+  --color-buttonShadow: #235dcb;
+  --color-cardBg: #235dcb;
+  --color-buttonBg: #7ca9ff;
+  --color-buttonBorder: #000000;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.theme-yellow {
+  --color-buttonShadow: #caa217;
+  --color-cardBg: #caa217;
+  --color-buttonBg: #ffe066;
+  --color-buttonBorder: #000000;
 }
+.theme-red {
+  --color-buttonShadow: #ca1753;
+  --color-cardBg: #ca1753;
+  --color-buttonBg: #ff66a1;
+  --color-buttonBorder: #000000;
+}
+
+.theme-pink {
+  --color-buttonShadow: #d63384;
+  --color-cardBg: #d63384;
+  --color-buttonBg: #ff91c1;
+  --color-buttonBorder: #000000;
+}
+
+.theme-orange {
+  --color-buttonShadow: #d35400;
+  --color-cardBg: #d35400;
+  --color-buttonBg: #ff9f5c;
+  --color-buttonBorder: #000000;
+}
+.theme-teal {
+  --color-buttonShadow: #0e8b8b;
+  --color-cardBg: #0e8b8b;
+  --color-buttonBg: #68d6d6;
+  --color-buttonBorder: #000000;
+}
+
+.theme-purple {
+  --color-buttonShadow: #7b2cbf;
+  --color-cardBg: #7b2cbf;
+  --color-buttonBg: #b28dff;
+  --color-buttonBorder: #000000;
+}
+
+.theme-lavender {
+  --color-buttonShadow: #775bc2;
+  --color-cardBg: #775bc2;
+  --color-buttonBg: #c5a7ff;
+  --color-buttonBorder: #000000;
+}
+
+.theme-mint {
+  --color-buttonShadow: #259d7f;
+  --color-cardBg: #259d7f;
+  --color-buttonBg: #7de2b3;
+  --color-buttonBorder: #000000;
+}
+
+.theme-gray {
+  --color-buttonShadow: #6c757d;
+  --color-cardBg: #6c757d;
+  --color-buttonBg: #d7d7d7;
+  --color-buttonBorder: #000000;
+}
+
