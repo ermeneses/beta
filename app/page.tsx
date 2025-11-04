@@ -6,8 +6,8 @@ import Grupo from "./components/Grupo";
 
 export default function Home() {
   return (
-    <div className="flex h-lvh bg-black font-sans p-4">
-      <Contenedor imagen="https://wallpapermural.com/cdn/shop/files/KanagawaPano_Artwork.png?v=1750700592">
+    <div className="flex h-lvh font-sans p-4">
+      <Contenedor theme="lime">
         {/* <div className="flex flex-row items-start justify-start gap-4 p-4 bg-white  relative border-2 h-full w-8/12 mx-auto rounded-[40px]"> */}
         <Grupo visible={false} borde nombre="Prueba" w="w-56" theme="sky">
           <Enlace url="https://phg.rosmiman.com/rosmiman" desc="Rosmiman Producción" theme="green" favicon="https://phg.rosmiman.com/rosmiman/favicon.png" />
@@ -21,8 +21,19 @@ export default function Home() {
           <Enlace url="https://app.travelperk.com/home/flights" desc="TravelPerk" favicon="https://app.travelperk.com/static/favicon.ico" theme="lime" />
           <Enlace url="https://web.whatsapp.com/" desc="Whatsapp" favicon="https://favicon.im/whatsapp.com" theme="orange" />
         </Grupo>
-        <GoogleSearchInput />
-        <ChatGPTSearchInput />
+        <Grupo visible={false} borde nombre="Prueba" w="w-auto" theme="purple">
+          <GoogleSearchInput />
+          <ChatGPTSearchInput />
+        </Grupo>
+        {/* <div
+          className="relative w-[200px] h-[200px] rounded-[10px] shadow-[16px_16px_20px_#0000008c] overflow-hidden
+before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%]
+before:bg-[conic-gradient(transparent,#00a6ff23,#00a6ff)] before:animate-spin "
+        >
+          <div className="absolute flex justify-center items-center top-[5px] right-[5px] bottom-[5px] left-[5px] rounded-[10px] bg-black">
+            <h1 className="text-white">sdf</h1>
+          </div>
+        </div> */}
 
         {/* </div> */}
       </Contenedor>

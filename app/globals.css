@@ -10,6 +10,8 @@
 
   @apply -translate-y-0.5
 }
+
+
 :root {
   --color-cardBg: oklch(100% 0.00011 271.152);
   --color-cardShadow: oklch(0.22 0.02 280);

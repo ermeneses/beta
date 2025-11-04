@@ -15,7 +15,7 @@ const Grupo = ({ direction = "flex-col", nombre = "Section", visible = true, chi
   const width = w ? w : "w-full";
 
   return (
-    <div className={`rounded-3xl bg-(--color-cardBg) border-black p-4 w-1/6 theme-${theme} ${conBorde} ${width}`}>
+    <div className={`rounded-3xl bg-(--color-cardBg) border-black p-4 w-1/6  shadow-card theme-${theme} ${conBorde} ${width}`}>
       {visible && <h1>{nombre}</h1>}
       <div className={`gap-1.5 flex ${direction}`}>{children}</div>
     </div>
