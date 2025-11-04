@@ -2,7 +2,7 @@
 
 
 .shadow-card {
-  box-shadow: 0px 0px 0 var(--color-cardBorder);
+  box-shadow: 0px 1px 0 var(--color-cardBorder);
 }
 .shadow-card:hover {
   /* background-color:  var(--color-cardShadow); */

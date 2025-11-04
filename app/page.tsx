@@ -1,5 +1,7 @@
+import ChatGPTSearchInput from "./components/ChatGPTSearchInput";
 import Contenedor from "./components/Contenedor";
 import Enlace from "./components/Enlace";
+import GoogleSearchInput from "./components/GoogleSearchInput";
 import Grupo from "./components/Grupo";
 
 export default function Home() {
@@ -17,7 +19,10 @@ export default function Home() {
           <Enlace url="https://dribbble.com/" desc="Dribbble" theme="pink" />
           <Enlace url="https://vercel.com/" desc="Vercel" theme="white" />
           <Enlace url="https://app.travelperk.com/home/flights" desc="TravelPerk" favicon="https://app.travelperk.com/static/favicon.ico" theme="lime" />
+          <Enlace url="https://web.whatsapp.com/" desc="Whatsapp" favicon="https://favicon.im/whatsapp.com" theme="orange" />
         </Grupo>
+        <GoogleSearchInput />
+        <ChatGPTSearchInput />
 
         {/* </div> */}
       </Contenedor>
