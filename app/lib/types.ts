@@ -1,1 +1,1 @@
-export type COLORES = "green" | "blue" | "red" | "yellow" | "pink" | "orange" | "teal" | "purple" | "lavender" | "mint" | "gray";
+export type COLORES = "green" | "lime" | "sky" | "purple" | "orange" | "yellow" | "mint" | "indigo" | "pink" | "white";
