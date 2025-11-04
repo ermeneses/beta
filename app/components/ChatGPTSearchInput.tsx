@@ -24,7 +24,7 @@ export default function ChatGPTSearchInput() {
              px-4 py-2 text-sm font-semibold border-2 rounded-lg 
              hover:-translate-x-0.5 hover:-translate-y-0.5 shadow-card"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-bot-icon lucide-bot">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bot-icon lucide-bot w-6 h-6">
           <path d="M12 8V4H8" />
           <rect width="16" height="12" x="4" y="8" rx="2" />
           <path d="M2 14h2" />
